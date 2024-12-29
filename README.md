@@ -11,20 +11,22 @@ The plugin utilizes Vite's `transformIndexHtml` hooks to change `<script type="m
 ### Installation
 
 ```bash
-npm install vite-plugin-prevent-rewrite-imports-type-module --save-dev
+npm i -D @blockquote/vite-plugin-prevent-rewrite-imports-type-module
 ```
 
 ### Usage
 
-Add the `vitePluginPreventRewriteImportsTypeModule` to your Vite configuration:
+Add the `preventRewriteImportsTypeModule` to your Vite configuration:
 
-```javascript
-import { defineConfig } from 'vite';
-import { vitePluginPreventRewriteImportsTypeModule } from 'vite-plugin-prevent-rewrite-imports-type-module';
+```js
+// vite.config.*
+import {defineConfig} from 'vite';
+import {preventRewriteImportsTypeModule} from '@blockquote/vite-plugin-prevent-rewrite-imports-type-module';
 
 export default defineConfig({
-  plugins: [vitePluginPreventRewriteImportsTypeModule()],
+  plugins: [preventRewriteImportsTypeModule()],
 });
+
 ```
 
 ### Configuration Options
@@ -34,13 +36,15 @@ export default defineConfig({
 | `folderName`   | String  | `'demo'` | The target folder name to apply the plugin.          |
 | `excludeIndex` | Boolean | `true`   | Whether to exclude `index.html` from transformation. |
 
-```javascript
-import { defineConfig } from 'vite';
-import { vitePluginPreventRewriteImportsTypeModule } from 'vite-plugin-prevent-rewrite-imports-type-module';
+```js
+// vite.config.*
+import {defineConfig} from 'vite';
+import {preventRewriteImportsTypeModule} from '@blockquote/vite-plugin-prevent-rewrite-imports-type-module';
 
 export default defineConfig({
-  plugins: [vitePluginPreventRewriteImportsTypeModule({ excludeIndex: false })],
+  plugins: [preventRewriteImportsTypeModule({excludeIndex: false})],
 });
+
 ```
 
 ### License

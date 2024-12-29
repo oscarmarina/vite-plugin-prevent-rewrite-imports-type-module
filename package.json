@@ -1,6 +1,6 @@
 {
   "name": "@blockquote/vite-plugin-prevent-rewrite-imports-type-module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Vite plugin that prevents Vite from rewriting ES module imports by targeting `<script type=\"module\">`",
   "keywords": [
     "vite-plugin"
